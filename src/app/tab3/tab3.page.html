@@ -1,9 +1,74 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Tab Three
+      Article's
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content color="transparent">
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="happy"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="start">
+      <<ion-fab-button color="warning"><ion-icon src="../assets/emoticons/hype.svg"></ion-icon></ion-fab-button>
+      <ion-fab-button color="dark"><ion-icon src="../assets/emoticons/sleepy.svg"></ion-icon></ion-fab-button>
+      <ion-fab-button color="danger"><ion-icon src="../assets/emoticons/angry.svg"></ion-icon></ion-fab-button>
+      <ion-fab-button color="tertiary"><ion-icon src="../assets/emoticons/sad.svg"></ion-icon></ion-fab-button>
+      <ion-fab-button color="success"><ion-icon src="../assets/emoticons/happy.svg"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+  <ion-card color="light">
+    <ion-card-header>
+      <ion-card-title>
+        The Beginner's Guide to Continuous Self-Improvement
+      </ion-card-title>
+      <ion-card-subtitle>
+        James Clear
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Let's define self-improvement.
+      The definition of self-improvement is pretty self-explanatory:
+      Self-improvement is the improvement of one's knowledge, status, or character by one's own efforts.
+      It's the quest to make ourselves better in any and every facet of life.
+      <ion-row>
+        <ion-col>
+          <ion-button href="https://jamesclear.com/self-improvement">
+            Full Article
+            <ion-icon slot="end" name="play"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+  <ion-card color="light">
+    <ion-card-header>
+      <ion-card-title>
+        How to Focus Better and Work More Effectively
+      </ion-card-title>
+      <ion-card-subtitle>
+        Bloomberg.com
+      </ion-card-subtitle>
+      <ion-card-subtitle>
+        Rebecca Greenfield
+      </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      The average person operates in no way as Newport does.
+      A 2018 survey by Udemy, an online learning platform, of more than 1,000 full-time workers in the U.S.
+      found that 69 percent report being distracted at work by e-mail, chat, social media, their phones,
+      and all the other shiny baubles that beg our attention throughout the workday.
+      Half say that these workplace distractions result in worse performance and lower productivity.
+      <ion-row>
+        <ion-col>
+          <ion-button href="https://www.bloomberg.com/news/articles/2019-01-25/how-to-focus-better-work-more-effectively-productivity-exercise">
+            Full Article
+            <ion-icon slot="end" name="play"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

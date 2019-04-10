@@ -1,9 +1,193 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Tab Two
+      Music
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content color="transparent">
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="happy"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="start">
+      <ion-fab-button color="warning"><ion-icon src="../assets/emoticons/hype.svg"></ion-icon></ion-fab-button>
+      <ion-fab-button color="dark"><ion-icon src="../assets/emoticons/sleepy.svg"></ion-icon></ion-fab-button>
+      <ion-fab-button color="danger"><ion-icon src="../assets/emoticons/angry.svg"></ion-icon></ion-fab-button>
+      <ion-fab-button color="tertiary"><ion-icon src="../assets/emoticons/sad.svg"></ion-icon></ion-fab-button>
+      <ion-fab-button color="success"><ion-icon src="../assets/emoticons/happy.svg"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <ion-img src="../assets/musicTab/album1.jpg"></ion-img>
+    </ion-thumbnail>
+    <ion-label>
+      Old Town Road
+      <ion-card-subtitle>
+        Lil Nas X
+      </ion-card-subtitle>
+    </ion-label>
+    <ion-button color="medium" (click)="togglePlay(0)">
+      <ion-icon [name]="play[0] ? 'play':'pause'"></ion-icon>
+    </ion-button>
+    <ion-button color="danger" (click)="toggleLike(0)">
+      <ion-icon [name]="like[0] ? 'heart':'heart-empty'"></ion-icon>
+    </ion-button>
+  </ion-item>
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <ion-img src="../assets/musicTab/album2.jpg"></ion-img>
+    </ion-thumbnail>
+    <ion-label>
+      Sunflower
+      <ion-card-subtitle>
+        Post Malone & Swae Lee
+      </ion-card-subtitle>
+    </ion-label>
+    <ion-button color="medium" (click)="togglePlay(1)">
+      <ion-icon [name]="play[1] ? 'play':'pause'"></ion-icon>
+    </ion-button>
+    <ion-button color="danger" (click)="toggleLike(1)">
+      <ion-icon [name]="like[1] ? 'heart':'heart-empty'"></ion-icon>
+    </ion-button>
+  </ion-item>
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <ion-img src="../assets/musicTab/album3.jpg"></ion-img>
+    </ion-thumbnail>
+    <ion-label>
+      7 Rings
+      <ion-card-subtitle>
+        Ariana Grande
+      </ion-card-subtitle>
+    </ion-label>
+    <ion-button color="medium" (click)="togglePlay(2)">
+      <ion-icon [name]="play[2] ? 'play':'pause'"></ion-icon>
+    </ion-button>
+    <ion-button color="danger" (click)="toggleLike(2)">
+      <ion-icon [name]="like[2] ? 'heart':'heart-empty'"></ion-icon>
+    </ion-button>
+  </ion-item>
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <ion-img src="../assets/musicTab/album4.jpg"></ion-img>
+    </ion-thumbnail>
+    <ion-label>
+      Wow.
+      <ion-card-subtitle>
+        Post Malone
+      </ion-card-subtitle>
+    </ion-label>
+    <ion-button color="medium" (click)="togglePlay(3)">
+      <ion-icon [name]="play[3] ? 'play':'pause'"></ion-icon>
+    </ion-button>
+    <ion-button color="danger" (click)="toggleLike(3)">
+      <ion-icon [name]="like[3] ? 'heart':'heart-empty'"></ion-icon>
+    </ion-button>
+  </ion-item>
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <ion-img src="../assets/musicTab/album5.jpg"></ion-img>
+    </ion-thumbnail>
+    <ion-label>
+      Without Me
+      <ion-card-subtitle>
+        Halsey
+      </ion-card-subtitle>
+    </ion-label>
+    <ion-button color="medium" (click)="togglePlay(4)">
+      <ion-icon [name]="play[4] ? 'play':'pause'"></ion-icon>
+    </ion-button>
+    <ion-button color="danger" (click)="toggleLike(4)">
+      <ion-icon [name]="like[4] ? 'heart':'heart-empty'"></ion-icon>
+    </ion-button>
+  </ion-item>
+
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <ion-img src="../assets/musicTab/album6.jpg"></ion-img>
+    </ion-thumbnail>
+    <ion-label>
+      Please Me
+      <ion-card-subtitle>
+        Cardi B & Bruno Mars
+      </ion-card-subtitle>
+    </ion-label>
+    <ion-button color="medium" (click)="togglePlay(5)">
+      <ion-icon [name]="play[5] ? 'play':'pause'"></ion-icon>
+    </ion-button>
+    <ion-button color="danger" (click)="toggleLike(5)">
+      <ion-icon [name]="like[5] ? 'heart':'heart-empty'"></ion-icon>
+    </ion-button>
+  </ion-item>
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <ion-img src="../assets/musicTab/album7.jpg"></ion-img>
+    </ion-thumbnail>
+    <ion-label>
+      Bad Guy
+      <ion-card-subtitle>
+        Billie Eilish
+      </ion-card-subtitle>
+    </ion-label>
+    <ion-button color="medium" (click)="togglePlay(6)">
+      <ion-icon [name]="play[6] ? 'play':'pause'"></ion-icon>
+    </ion-button>
+    <ion-button color="danger" (click)="toggleLike(6)">
+      <ion-icon [name]="like[6] ? 'heart':'heart-empty'"></ion-icon>
+    </ion-button>
+  </ion-item>
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <ion-img src="../assets/musicTab/album8.jpg"></ion-img>
+    </ion-thumbnail>
+    <ion-label>
+      Sucker
+      <ion-card-subtitle>
+        Jonas Brothers
+      </ion-card-subtitle>
+    </ion-label>
+    <ion-button color="medium" (click)="togglePlay(7)">
+      <ion-icon [name]="play[7] ? 'play':'pause'"></ion-icon>
+    </ion-button>
+    <ion-button color="danger" (click)="toggleLike(7)">
+      <ion-icon [name]="like[7] ? 'heart':'heart-empty'"></ion-icon>
+    </ion-button>
+  </ion-item>
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <ion-img src="../assets/musicTab/album9.jpg"></ion-img>
+    </ion-thumbnail>
+    <ion-label>
+      Happier
+      <ion-card-subtitle>
+        Marshmello & Bastille
+      </ion-card-subtitle>
+    </ion-label>
+    <ion-button color="medium" (click)="togglePlay(8)">
+      <ion-icon [name]="play[8] ? 'play':'pause'"></ion-icon>
+    </ion-button>
+    <ion-button color="danger" (click)="toggleLike(8)">
+      <ion-icon [name]="like[8] ? 'heart':'heart-empty'"></ion-icon>
+    </ion-button>
+  </ion-item>
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <ion-img src="../assets/musicTab/album10.jpg"></ion-img>
+    </ion-thumbnail>
+    <ion-label>
+      Middle Child
+      <ion-card-subtitle>
+        J. Cole
+      </ion-card-subtitle>
+    </ion-label>
+    <ion-button color="medium" (click)="togglePlay(9)">
+      <ion-icon [name]="play[9] ? 'play':'pause'"></ion-icon>
+    </ion-button>
+    <ion-button color="danger" (click)="toggleLike(9)">
+      <ion-icon [name]="like[9] ? 'heart':'heart-empty'"></ion-icon>
+    </ion-button>
+  </ion-item>
+</ion-content>
