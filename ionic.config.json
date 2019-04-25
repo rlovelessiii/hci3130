@@ -1,6 +1,8 @@
 {
   "name": "hci3130",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular",
   "id": "b4a1b6b3"
 }
